@@ -1,0 +1,34 @@
+projects:
+  - name: workflows
+    namespace: argocd
+    description: ArgoCD Workflows
+    sourceRepos:
+      - "https://github.com/james-gonzalez/argo-local"
+    destinations:
+      - namespace: "workflows"
+        name: in-cluster
+        server: https://kubernetes.default.svc
+    clusterResourceWhitelist:
+      - group: "*"
+        kind: "*"
+    namespaceResourceWhitelist:
+      - group: "*"
+        kind: "*"
+
+applications:
+  - name: argocd-workflows
+    namespace: argocd
+    project: workflows
+    destination:
+      name: in-cluster
+      namespace: workflows
+    syncPolicy:
+      automated:
+        prune: true
+        selfHeal: true
+    source:
+      repoURL: https://github.com/james-gonzalez/argo-local
+      path: apps
+      targetRevision: HEAD
+      directory:
+        recurse: true
