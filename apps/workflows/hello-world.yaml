@@ -16,5 +16,5 @@ spec:
       - CreateNamespace=true
   source:
     repoURL: https://github.com/james-gonzalez/argo-local
-    path: charts/workflows
+    path: workflows
     targetRevision: HEAD
