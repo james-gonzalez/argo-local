@@ -21,6 +21,7 @@
 | applications[0].source.path | string | `"apps/workflows"` |  |
 | applications[0].source.repoURL | string | `"https://github.com/james-gonzalez/argo-local"` |  |
 | applications[0].source.targetRevision | string | `"HEAD"` |  |
+| applications[0].syncOptions[0] | string | `"CreateNamespace=true"` |  |
 | applications[0].syncPolicy.automated.prune | bool | `true` |  |
 | applications[0].syncPolicy.automated.selfHeal | bool | `true` |  |
 | projects[0].clusterResourceWhitelist[0].group | string | `"*"` |  |

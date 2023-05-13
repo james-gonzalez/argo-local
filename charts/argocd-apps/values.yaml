@@ -26,6 +26,8 @@ applications:
       automated:
         prune: true
         selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
     source:
       repoURL: https://github.com/james-gonzalez/argo-local
       path: apps/workflows
