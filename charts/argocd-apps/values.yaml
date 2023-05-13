@@ -28,7 +28,7 @@ applications:
         selfHeal: true
     source:
       repoURL: https://github.com/james-gonzalez/argo-local
-      path: apps
+      path: apps/workflows
       targetRevision: HEAD
       directory:
         recurse: true

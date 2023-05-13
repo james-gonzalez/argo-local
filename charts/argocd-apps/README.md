@@ -18,7 +18,7 @@
 | applications[0].namespace | string | `"argocd"` |  |
 | applications[0].project | string | `"workflows"` |  |
 | applications[0].source.directory.recurse | bool | `true` |  |
-| applications[0].source.path | string | `"apps"` |  |
+| applications[0].source.path | string | `"apps/workflows"` |  |
 | applications[0].source.repoURL | string | `"https://github.com/james-gonzalez/argo-local"` |  |
 | applications[0].source.targetRevision | string | `"HEAD"` |  |
 | applications[0].syncPolicy.automated.prune | bool | `true` |  |
