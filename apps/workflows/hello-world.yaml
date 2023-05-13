@@ -20,4 +20,3 @@ spec:
     targetRevision: HEAD
     directory:
         recurse: true
-
