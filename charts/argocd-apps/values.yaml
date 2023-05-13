@@ -3,7 +3,7 @@ projects:
     namespace: argocd
     description: ArgoCD Workflows
     sourceRepos:
-      - "https://github.com/james-gonzalez/argo-local"
+      - "*"
     destinations:
       - namespace: "workflows"
         name: in-cluster
